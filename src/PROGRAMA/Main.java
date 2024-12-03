@@ -33,7 +33,7 @@ public class Main {
             System.out.print("Sexo: ");
                 String sexo = scanner.nextLine();
                 listaAlumnos.add(new Alumno(dni, nombre, distrito, edad, sexo));
-            System.out.println("Alumno registrado con éxito.");
+            System.out.println("Alumno registrado con exito.");
             break;
             case 2:
             //Generar matrícula
@@ -41,7 +41,7 @@ public class Main {
                 System.out.println("\nNo hay alumnos registrados.");
             break;
         }
-        System.out.println("\n----- GENERAR MATRÍCULA -----");
+        System.out.println("\n----- GENERAR MATRICULA -----");
         System.out.println("Seleccione un alumno por índice:");
         for (int i = 0; i < listaAlumnos.size(); i++) {
         System.out.println(i + ". " + listaAlumnos.get(i));
@@ -58,17 +58,17 @@ public class Main {
             double subtotal = scanner.nextDouble();
                 Matricula matricula = new Matricula(alumno, curso, fechaInicio, subtotal);
                 listaMatriculas.add(matricula);
-            System.out.println("\nMatrícula generada con exito.");
+            System.out.println("\nMatricula generada con exito.");
                 matricula.generarBoleta();
         } else {
-            System.out.println("\nÍndice no válido.");
+            System.out.println("\nIndice no valido.");
         }
         break;
         case 3:
         //Mostrar listado de alumnos matriculados
         System.out.println("\n----- LISTADO DE ALUMNOS MATRICULADOS -----");
         if (listaMatriculas.isEmpty()) {
-            System.out.println("No hay matrículas registradas.");
+            System.out.println("No hay matriculas registradas.");
         } else {
             for (Matricula matricula : listaMatriculas) {
                  System.out.println(matricula);
@@ -79,7 +79,7 @@ public class Main {
                 System.out.println("\nSaliendo del sistema...");
                 break;
                 default:
-                System.out.println("\nOpción no válida.");
+                System.out.println("\nOpcion no valida.");
             }
         } while (opcion != 4);
         scanner.close();
