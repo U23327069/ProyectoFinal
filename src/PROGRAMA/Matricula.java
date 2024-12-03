@@ -14,7 +14,7 @@ public class Matricula {
     public void generarBoleta() {
         double igv = subtotal * 0.18;
         double total = subtotal + igv;
-        System.out.println("\n----- BOLETA DE MATRÍCULA -----");
+        System.out.println("\n----- BOLETA DE MATRICULA -----");
         System.out.println("Alumno: " + alumno.getNombre());
         System.out.println("Curso: " + curso);
         System.out.println("Fecha de Inicio: " + fechaInicio);

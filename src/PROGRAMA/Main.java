@@ -11,10 +11,10 @@ public class Main {
     do {
         System.out.println("\n----- MENU PRINCIPAL -----");
         System.out.println("1. Registrar Alumno");
-        System.out.println("2. Generar Matrícula");
+        System.out.println("2. Generar Matricula");
         System.out.println("3. Mostrar Listado de Alumnos Matriculados");
         System.out.println("4. Salir");
-        System.out.print("Seleccione una opción: ");
+        System.out.print("Seleccione una opcion: ");
         opcion = scanner.nextInt();
         scanner.nextLine(); // Limpiar buffer
         switch (opcion) {
@@ -42,7 +42,7 @@ public class Main {
             break;
         }
         System.out.println("\n----- GENERAR MATRICULA -----");
-        System.out.println("Seleccione un alumno por índice:");
+        System.out.println("Seleccione un alumno por indice:");
         for (int i = 0; i < listaAlumnos.size(); i++) {
         System.out.println(i + ". " + listaAlumnos.get(i));
     }
